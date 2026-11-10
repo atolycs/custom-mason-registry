@@ -10,6 +10,6 @@ languages:
 categories:
   - LSP
 source:
-  id: pkg:npm/@aws/cloudformation-languageserver
+  id: pkg:npm/@aws/cloudformation-languageserver@0.0.0
 bin:
   cfn-lsp: npm:cloudformation-languageserver

@@ -1,12 +1,14 @@
 name: cloudformation-languageserver
 description: AWS Cloudformation Language Server
-homepage: https://github.com/aws-cloudformation/cloudformation-languageserver?tab=readme-ov-file
+homepage: https://github.com/aws-cloudformation/cloudformation-languageserver
 licenses:
   - Apache-2.0
 languages:
   - YAML
   - JSON
   - Cloudformation
+categories:
+  - LSP
 source:
   id: pkg:npm/@aws/cloudformation-languageserver@v1.14.0
 bin:

@@ -10,6 +10,16 @@ languages:
 categories:
   - LSP
 source:
-  id: pkg:npm/@aws/cloudformation-languageserver@0.0.0
+  id: pkg:github/aws-cloudformation/cloudformation-languageserver@v1.14.0
+  asset:
+    - target: darwin_arm64
+      file: cloudformation-languageserver-{{version}}-darwin-arm64-node24.zip
+      bin: cfn-lsp-server-standalone.js
+    - target: linux_arm64_gnu
+      file: cloudformation-languageserver-{{version}}-linux-arm64-node24.zip
+      bin: cfn-lsp-server-standalone.js
+    - target: linux_x64_gnu
+      file: cloudformation-languageserver-{{version}}-linux-x64-node24.zip
+      bin: cfn-lsp-server-standalone.js
 bin:
-  cfn-lsp: npm:cloudformation-languageserver
+  cfp-lsp: "{{source.asset.bin}}"

@@ -1,0 +1,8 @@
+name: cloudformation-languageserver
+description: AWS Cloudformation Language Server
+licenses:
+  - Apache-2.0 license
+source:
+  id: pkg:npm/@aws/cloudformation-languageserver@v1.14.0
+bin:
+  cfn-lsp: npm:cloudformation-languageserver
